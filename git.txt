@@ -1,0 +1,48 @@
+自报家门:
+	git config --global user.name "你的名字"
+	git config --global user.email "你的邮箱"
+
+初始化版本库: git init
+
+查看版本库状态: git status
+
+添加文件: git add  文件名  (查看状态)
+
+提交文件: git commit -m "说明"
+
+查看修改内容:  git diff 文件名
+
+退回修改: git checkout 文件名
+
+退回指定的版本:
+	git reflog 查看所有的版本号
+
+	git reset --hard 版本号
+
+版本库跟工作区文件比较: git diff HEAD 文件名 
+
+撤销暂存区: git reset HEAD 文件名
+
+
+
+===========================================
+建立远程版本库
+	https://github.com 注册账号
+
+	创建库
+
+	本机跟远程库建立关联;
+		git remote add origin https://github.com/peimengc/test.git
+
+	提交本机内容:
+		git push
+
+
+
+	克隆远程库:
+	git clone 版本库地址
+
+	同步远程库:
+	git pull
+
+	
